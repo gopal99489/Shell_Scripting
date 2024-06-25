@@ -1,0 +1,4 @@
+1001 Apple Watch $250
+1002 iPhone 13 $899
+1003 Macbook Pro $1299
+

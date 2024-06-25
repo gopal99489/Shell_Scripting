@@ -1,0 +1,54 @@
+1. Backup Files
+Objective:
+The backup_file function is designed to provide a simple and automated method for backing up a specified file to a designated directory. It ensures data safety by copying the file to the backup location, creating the directory if it does not already exist. This function enhances system reliability by allowing users to easily and consistently back up important files, reducing the risk of data loss due to accidental deletion, file corruption, or other unforeseen events.
+
+backup_file() {
+    local file=$1
+    local backup_dir=$2
+    if [[ -f $file ]]; then
+        cp $file $backup_dir
+        echo "$file backed up to $backup_dir"
+    else
+        echo "$file does not exist."
+fi
+}
+backup_file "example.txt" "/path/to/backup"
+Explanation:
+local file=$1: Assigns the first argument to a local variable file.
+local backup_dir=$2: Assigns the second argument to a local variable backup_dir.
+if [[ -f $file ]]; then: Checks if the file exists and is a regular file.
+cp $file $backup_dir: Copies the file to the backup_dir.
+echo "$file backed up to $backup_dir": Prints a confirmation message.
+else echo "$file does not exist.": Prints an error message if the file does not exist.
+==================================================================
+2. Check Disk Usage
+Objective:
+The check_disk_usage function aims to provide a straightforward method for checking the disk usage of a specified directory.
+check_disk_usage() {
+    local dir=$1
+    if [[ -d $dir ]]; then
+        du -sh $dir
+    else
+        echo "$dir is not a valid directory."
+    fi
+}
+check_disk_usage "/home/user"
+local dir=$1: Assigns the first argument to a local variable dir.
+if [[ -d $dir ]]; then: Checks if dir exists and is a directory.
+du -sh $dir: Displays the total disk usage of dir in a human-readable format.
+else echo "$dir is not a valid directory.": Prints an error message if dir is not valid.
+==================================================================
+3. Convert Text to Uppercase
+The to_uppercase script is designed to convert a given string to uppercase, providing a simple and efficient way to standardise text cases.
+Script:
+to_uppercase() {
+    local input=$1
+    echo "${input^^}"
+}
+result=$(to_uppercase "hello world")
+echo "Uppercase: $result"
+Explanation:
+local input=$1: Assigns the first argument to a local variable input.
+echo "${input^^}": Converts input to uppercase using parameter expansion and prints it.
+result=$(to_uppercase "hello world"): Captures the function output into result.
+==================================================================

@@ -1,0 +1,26 @@
+hello this is gopal !
+hello this is gopal!
+hello this is gopal!
+
+hello this is 2nd line 
+
+hello this is 3rd line
+
+gopal.rao@gmail.com
+
+gopal@gmail.com
+
+mike@gmail.com
+
+As mentioned earlier, if you want the value of a variable, you precede it with a $ (for example, $CITY). This is really just shorthand for the notation ${CITY}; curly braces are used when the value of the parameter needs to be placed next to other text without a space. Bash has special rules that allow you to expand the value of a variable in different ways. Going into all the rules is probably overkill for a quick introduction to shell scripts, but the following list presents some common constructs you’re likely to see in bash scripts you fi nd on your Linux system.
+
+
+ERROR
+
+ERROR
+
+ERROR
+
+ERROR
+
+
