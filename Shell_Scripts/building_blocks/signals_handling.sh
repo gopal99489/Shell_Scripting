@@ -3,7 +3,7 @@
 # Function to handle cleanup on Ctrl+C
 clean_up() {
     echo "Cleaning up and exiting."
-    rm -rf temp_file.txt  # Example cleanup task
+    rm -rf gopal.txt  # Example cleanup task
     exit 1
 }
 
