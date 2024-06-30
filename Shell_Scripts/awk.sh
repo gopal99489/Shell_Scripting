@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #awk '{
  #   if ($1 > 102) 
   #      printf("\033[31mID: %d, Name: %s\033[0m\n", $1, $2);
